@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --locker-coral: #ef5b5b;
+  --locker-rose: #ff7f96;
+  --locker-mint: #ceffb4;
+  --locker-sky: #b6f0ff;
+  --locker-lilac: #c9a7eb;
+}
+
+.locker-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--locker-coral) 0%,
+    var(--locker-rose) 25%,
+    var(--locker-mint) 50%,
+    var(--locker-sky) 75%,
+    var(--locker-lilac) 100%
+  );
+}
+
+body {
+  @apply min-h-screen antialiased text-slate-800;
+}
